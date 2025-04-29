@@ -24,9 +24,9 @@ def main():
     other_symbols_counter = 0
 
     for c in sentence:
-        if c in vowels:
+        if c.lower() in vowels:
             vowels_counter += 1
-        elif c in consonants:
+        elif c.lower() in consonants:
             consonants_counter += 1
         else:
             other_symbols_counter += 1
